@@ -1,3 +1,61 @@
+.menu {
+  display: none;
+  }
+
+input {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+.menu__showmenu {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    margin-left: -10px;
+    padding: 5px 10px 10px;
+    top: 2px;
+    font-size: 23px;
+}
+
+.nav {
+  display: flex;
+  background: #fbec5d;
+}
+
+.nav a {
+color: black;
+padding:15px 10px;
+text-decoration:none;
+text-align:center;
+}
+
+.nav a:hover {
+  background:#fbecff;
+}
+
+
+@media all and (max-width: 800px) {
+  .nav {
+    justify-content: space-around;
+  }
+
+  .nav a {
+    flex-grow:1;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .menu {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+}
+
 @media (min-width:320px) {
   .title {
     font-size: 20px;
